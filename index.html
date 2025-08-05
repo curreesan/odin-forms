@@ -7,7 +7,52 @@
     <title>Forms</title>
 </head>
 <body>
-    <h1>testing</h1>
+    <section class="cta">
+        <div class="form-visual">
+            <img class="form-logo" src="img/form_logo.png" alt="Form Logo">
+            <div class="form-logo-text">odin</div>
+        </div>
+        <div class="form-content">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
+            <p>You know you want to.</p>
+        </div>
+        <form>
+            <div class="name">
+                <div class="form-group">
+                    <label for="first-name">first name</label>
+                    <input id="first-name" type="text" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">last name</label>
+                    <input id="last-name" type="text" required>
+                </div>
+            </div>
+            <div class="details">
+                <div class="form-group">
+                    <label for="email">email</label>
+                    <input id="email" type="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone-number">phone number</label>
+                    <input id="phone-number" type="tel" required>
+                </div>
+            </div>
+            <div class="password">
+                <div class="form-group">
+                    <label for="password">password</label>
+                    <input id="password" type="password" minlength="8" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">confirm password</label>
+                    <input id="confirm-password" type="password" minlength="8" required>
+                </div>
+            </div>
+            <div class="create-account">
+                <button type="submit">Create Account</button>
+            </div>
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </form>
+    </section>
     
 </body>
 </html>
