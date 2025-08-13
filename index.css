@@ -58,10 +58,13 @@ img {
 .form-content {
     display: flex;
     flex-direction: column;
+
+    padding-left: 20px;
 }
 
 .form-request {
     background-color: white;
+    padding: 20px;
 }
 
 form {
@@ -69,8 +72,6 @@ form {
     flex-direction: column;
     justify-content: center;
     gap:20px;
-
-    padding: 20px;
 }
 
 .form-text {
@@ -83,7 +84,24 @@ label {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 12px;
-    /* color: var(--subtle-white); */
+    font-weight:600;
+}
+
+input {
+    padding: 5px 10px;
+    border:1px solid var(--subtle-white);
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="password"]:invalid {
+    border-color: var(--red);
+}
+
+input:focus {
+    border-color: var(--blue);
+    box-shadow: 0 0 5px rgba(145, 208, 236, 0.5); 
+    outline: none; 
 }
 
 .name, .details, .password {
@@ -103,11 +121,15 @@ label {
     gap:20px;
 }
 
+.submit-btn {
+    padding-left: 20px;
+}
+
 button {
     color: white;
     background-color: var(--dark-green);
     font-weight: bold;
-    font-size: 12px;
+    font-size: 14px;
 
     padding: 10px 40px;
     border-radius: 8px;
@@ -118,6 +140,14 @@ a {
     text-decoration: none;
     color: var(--dark-green);
 
+}
+
+button:hover {
+    background-color: #4a5b3c;
+}
+
+.create-account .form-text {
+    padding-left: 20px;
 }
 
 
