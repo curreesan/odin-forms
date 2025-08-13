@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: sans-serif;
+}
+
 :root {
     --dark-green:#596D48;
     --subtle-white: #E5E7EB;
@@ -26,6 +30,11 @@ img {
 .cta {
     height: 100vh;
     display: flex;
+
+    max-width: 1200px;
+    margin: 0 auto;
+
+    background-color: var(--subtle-white);
 }
 
 .form-visual {
@@ -51,29 +60,65 @@ img {
     flex-direction: column;
 }
 
-.form {
-    display: flex;
+.form-request {
+    background-color: white;
 }
 
-.name {
-    display: flex;
-}
-
-.details {
-    display: flex;
-}
-
-.password {
-    display: flex;
-}
-
-.create-account {
+form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    gap:20px;
+
+    padding: 20px;
+}
+
+.form-text {
+    font-weight: bold; 
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+label {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+    /* color: var(--subtle-white); */
+}
+
+.name, .details, .password {
+    display: flex;
+    gap:20px;
+    padding-bottom: 20px;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
 }
+
+.create-account {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+button {
+    color: white;
+    background-color: var(--dark-green);
+    font-weight: bold;
+    font-size: 12px;
+
+    padding: 10px 40px;
+    border-radius: 8px;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-green);
+
+}
+
+
 

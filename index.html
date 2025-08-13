@@ -14,44 +14,47 @@
         </div>
         <form>
             <div class="form-content">
-                <div>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</div>
-                <div>You know you want to.</div>
+                <div class="form-text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</div>
+                <div class="form-text">You <em>know</em> you want to.</div>
             </div>
-            <div class="name">
-                <div class="form-group">
-                    <label for="first-name">first name</label>
-                    <input id="first-name" type="text" required>
+            <div class="form-request">
+                <div class="form-text">Let's do this!</div>
+                <div class="name">
+                    <div class="form-group">
+                        <label for="first-name">first name</label>
+                        <input id="first-name" type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">last name</label>
+                        <input id="last-name" type="text" required>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="last-name">last name</label>
-                    <input id="last-name" type="text" required>
+                <div class="details">
+                    <div class="form-group">
+                        <label for="email">email</label>
+                        <input id="email" type="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone-number">phone number</label>
+                        <input id="phone-number" type="tel" required>
+                    </div>
                 </div>
-            </div>
-            <div class="details">
-                <div class="form-group">
-                    <label for="email">email</label>
-                    <input id="email" type="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone-number">phone number</label>
-                    <input id="phone-number" type="tel" required>
-                </div>
-            </div>
-            <div class="password">
-                <div class="form-group">
-                    <label for="password">password</label>
-                    <input id="password" type="password" minlength="8" required>
-                </div>
-                <div class="form-group">
-                    <label for="confirm-password">confirm password</label>
-                    <input id="confirm-password" type="password" minlength="8" required>
+                <div class="password">
+                    <div class="form-group">
+                        <label for="password">password</label>
+                        <input id="password" type="password" minlength="8" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">confirm password</label>
+                        <input id="confirm-password" type="password" minlength="8" required>
+                    </div>
                 </div>
             </div>
             <div class="create-account">
                 <div class="submit-btn">
                     <button type="submit">Create Account</button>
                 </div>
-                <div>Already have an account? <a href="#">Log in</a></div>
+                <div class="form-text">Already have an account? <a href="#">Log in</a></div>
             </div>
         </form>
     </section>
