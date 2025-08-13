@@ -11,9 +11,16 @@
     --blue: rgb(145, 208, 236);
 }
 
+@font-face {
+    font-family: 'NorseBold';
+    src: url('./fonts/Norse-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
 img {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
 }
 
 .cta {
@@ -24,14 +31,19 @@ img {
 .form-visual {
     background-image: url(./img/form_image.jpg);
     background-size: contain;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     width: 40%;
 
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .form-logo-text {
     color: white;
+    font-family: 'NorseBold', sans-serif;
+    text-transform: uppercase;
+    font-size: 100px;
 }
 
 .form-content {
