@@ -1,3 +1,67 @@
-h1 {
-    color: green;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+
+:root {
+    --dark-green:#596D48;
+    --subtle-white: #E5E7EB;
+    --red: rgb(214, 128, 128);
+    --blue: rgb(145, 208, 236);
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+.cta {
+    height: 100vh;
+    display: flex;
+}
+
+.form-visual {
+    background-image: url(./img/form_image.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40%;
+
+    display: flex;
+}
+
+.form-logo-text {
+    color: white;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+}
+
+.name {
+    display: flex;
+}
+
+.details {
+    display: flex;
+}
+
+.password {
+    display: flex;
+}
+
+.create-account {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
